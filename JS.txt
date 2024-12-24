@@ -1,0 +1,464 @@
+24/09/24
+JS IS A CASE SENSITIVE.
+CREATE A NEW FOLDER IN DESKTOP WITH NAME JAVASCRIPT
+OPEN VS CODE CLICK ON NEW AND SELECT OPEN FOLDE AND SELECT JAVASCRIPT FOLDER FROM DESKTOP.
+AFTER SELECTING THE FOLDER CREATE JS BASE SUB FOLDER IN THAT FOLDER.
+CREATE .HTML FILE IN THAT SUB FOLDER AND WRITE PROGRAM TO EXECUTE.
+
+EXECUTION PROCESS:
+SELECT GO LIVE OPTION IN VS CODE IT IS PLACED IN BOTTOM RIGHT CORNER IN THE VS CODE.
+IF IT IS NOT SHOWING GO LIVE OPTION THAN GO TO "EXTENSIONS" WHICH IS PLACED IN THE VS CODE IN THE LEFT SIDE OPTIONS.
+THAN SEARCH FOR GO LIVE AND INSTALL IT. THAN RESTART THE VS CODE OR U WILL SEE THE GO LIVE OPTION AT THE BOTTON RIGHT 
+CORNER AT THE VS CODE. 
+THAN CLICK ON GO LIVE IT WILL OPENS THE BROWSER AND THAN RIGHT CLICK AND SELECT INSPECT AND THAN SELECT CONSOLE TO VIEW THE OUTPUT.
+
+OPEN THE VS CODE WE CAN CREATE JS CODE IN THREE DIFFERENT IN HTML DOCUMENT
+1.HEAD SECTION
+2.BODY SECTION
+3.EXTERNAL JS FILE
+
+*HEAD SECTION:
+WE CAN WRITE JS CODE IN THE HEAD SECTION BY USING SCRIPT TAG.
+<SCRIPT>
+//JS CODE
+</SCRIPT>
+
+*BODY SECTION:
+WE CAN WRITE JS CODE IN THE BODY SECTION BY USING SCRIPT TAG.
+<SCRIPT>
+//JS CODE
+</SCRIPT>
+
+*EXTERNAL JS:
+WE CAN CREATE SEPARATE JS FILE WITH .JS EXTENSION AND WE CAN LINK TO THE HTML DOCUMENT IN THE HEAD SECTION OR BODY SECTION
+ALONG WITH SCRIPT TAG WE ARE USING SOME OTHER TAGS AND ATTRIBUTES.
+<SCRIPT TYPE="TEXT/JAVASCRIPT" SRC="JS FILE"></SCRIPT>
+
+TO VIEW THE OUTPUT IN BROWSER WE NEED CONSOLE IN THREE TYPES:
+CONSOLE.LOG  : FUNDAMENTAL TOOL FOR DEBUGGING AND MONITORING THE EXECUTION OF CODE. 
+USED FOR OUTPUTTING THE GENERAL MESSAGES TO THE CONSOLE. IT CAN LOG ANY TYPE OF DATA, INCLUDING STRINGS,NUMBERS,OBJECTS,ARRAYS.
+
+CONSOLE.WARN : USED TO DISPLAY WARNING MESSAGES THAT MAY INDICATE APOTENTIAL PROBLEM. TYPICALLY HIGHLIGHTED IN YELLOW OR WARNING ICON. 
+
+CONSOLE.INFO : USED TO LOG INFORMATIONAL MESSAGES THAT PROVIDE INSIGHT INTO THE OPERATION OF THE APPLICATION OR UPDATES ABOUT THE APPLICATION.
+
+CONSOLE.LOG OR CONSOLE.INFO:
+PRINTS THE SAME OUTPUT AS GIVEN INPUT.
+
+IN JS WE HAVE TWO TYPES OF COMMENTS THE FIRST ONE IS SINGLE LINE COMMENTS : WE USE //
+EX://CONSOLE.LOG("HELLO EVERYONE")
+
+THE SECOND ONE IS BLOCK LEVEL COMMENT:WE USE */
+/*CONSOLE.LOG("HELLO EVERYONE")
+CONSOLE.WARN("GUD MRNG")*/
+
+VARIABLES IN JS:
+VARIABLES ARE THE STORAGE LOCATION OF DATA. REFERENCES WHICH POINTS TO MEMORY LOCATION.
+
+WHY DO WE REQUIRE VARIABLES:
+VARIABLES ARE REQUIRE TO STORE THE DATA IN THE MEMORY WHILE EXECUTING THE PROGRAM
+SO THAT WE CAN UTILIZE THE DATA TO DO SOME ACTION OR AFTER EXECUTING THE PROGRAM WE MIGHT REQUIRED TO STORE SOME OUTPUT
+
+HOW TO CREATE VARIABLES IN JAVASCRIPT:
+WE CAN TAKE HELP OF SCOPE STATEMENTS OR KEYWORDS TO CREATE A VARIABLES.
+DIFF TYPES OF KEYWORDS:3
+1.VAR : REDECLARE AND REASSIGN THE VARIABLE.
+2.LET : REASSIGNED BUT CAN NOT BE REDECLARE.
+3.CONST : CAN NOT BE REDECLARE AND REASSIGNED. WHILE DECLARING ONLY CONST SHOULD BE INITIALIZED WITH VALUE.
+
+IN JS WE WILL NOT DECLARE DATATYPES WHILE CREATING VARIABLES.
+EX: VAR CITY OR LET NAME OR CONST AGE.
+
+VARIABLE DECLARATION EX.HTML
+<SCRIPT>
+A=5
+CONSOLE.LOG(A)
+VAR CITY//VARIABLE DECLARATION:CREATING A VARIABLE WITHOUT ASSIGNING THE VALUE
+CITY="BANGALORE"//VARIABLE ASSIGNMENT USING EQUAL OPERATOR
+LET GENDER="MALE"//VARIABLE INITIALIZATION:STORING THE DATA AT THE TIME OF CREATING VARIABLE. OR ASSIGNING THE VALUE WHILE DECLARING THE VARIABLE.
+CONST AGE=23
+</SCRIPT>
+</BODY>
+
+RULES FOR DECLARING IDENTIFIRES:
+1.CAN INCLUDE UPPERCASE AND LOWERCASE LETTERS
+
+DIFF BW VAR LET CONST:
+VAR;
+<SCRIPT>
+VAR NAME="VIRAT"
+CONSOLE.LOG(NAME)------>VIRAT
+VAR NAME="SACHIN"
+CONSOLE.LOG(NAME)----->SACHIN
+
+LET:
+LET AGE=35
+CONSOLE.LOG(AGE)---->35
+AGE=23
+CONSOLE.LOG(AGE)---->23
+LET AGE=22
+CONSOLE.LOG(AGE)----->ERROR
+
+CONST:
+CONST CITY="BANGALORE"//WE SHOULD USE ""
+CONSOLE.LOG(CITY)----->BANGALORE
+CITY="MYSURE"
+CONSOLE.LOG(CITY)----->ERROR
+CONST CITY="KOLAR"
+CONSOLE.LOG(CITY)------>ERROR
+
+IN JAVASCRIPT THE VARIABLE NAME SHOULD NOT BE SAME EVEN USING VAR LET AND CONST.
+
+25/09/24
+DATA TYPES IN JS:
+DATA TYPES:IT IS USED TO DEFINE THE TYPE OF DATA WHICH WE ARE ASSIGNING TO VARIABLE.
+DATA TYPES ARE DIVIDED INTO 2 PARTS:
+1 PRIMITIVE DATA TYPE
+2 NON PRIMITIVE DATATYPE
+
+PRIMITIVE DATA TYPE FEATURES:
+ALL PRIMITIVE DATA TYPES ARE BASIC DATATYPES.
+ALL PRIMITIVE DATA TYPES ARE IMMUTABLE.
+PRIMITIVE DATA TYPES ARE STORE IN STACK MEMORY SEGMENT
+
+EXAMPLES OF PRIMITIVE DATA TYPES:
+1.NUMBER
+2.STRING
+3.UNDEFINED.
+4.NULL
+5.BIGINT
+6.SYMBOL
+
+NON PRIMITIVE DATATYPE FEATURES:
+NON PRIMITIVE DATATYPES ARE COMPLEX.
+NON PRIMITIVE DATATYPES ARE MUTABLE.
+NON PRIMITIVE DATATYPES ARE STORE IN THE HEAP SEGMENT OF THE MEMORY
+
+NOTE:ARRAY IS NOT DATATYPE IT COMES UNDER OBJECT DATA TYPE.
+ 
+typeof operator 
+//in js we have a special operator called typeof operator used to find the datatype of any variable
+//syntax:typeof<variable_name>
+var id=27
+console.log(typeof id)
+let name="virat"
+console.log(typeof name)
+var iscompleted=true
+console.log(typeof iscompleted)
+
+var person={}//in js {}show object
+console.log(typeof person)
+var names=[]//in js []shows array
+console.log( typeof names)
+
+ //number type:it is a datatype of integers,decimal values.
+var num=27
+let number=35.6789
+console.log(num)
+console.log(number)
+
+
+//stringtype:any data is enclosed with "or" it comes
+//under string type
+var name="virat"
+let city="mumbai"
+const age=24
+console.log(name)
+console.log(city)
+console.log(age)
+
+
+//boolean type:any variables which contains values True or False such type of data comes under boolean type
+
+var isplaced=true
+let iscompleted=false
+console.log(isplaced)
+
+//these are the 3 datatypes(NYMBER TYPE,STRING TYPE,BOOLEAN TYPE) +object type are used 95% in js 
+//in js we have special datatypes 
+//1.Undefined
+
+var a 
+console.log(a)
+let num 
+console.log(num)
+let b=null
+console.log(b)
+//BigInt datatype : any value which is greater than 2 to the power of 53-1 is comes under BigInt
+//less than 2 to the power of 53-1 comes under int datatype
+BigInt(123456789123456789123456789123456789)
+//symbol datatype
+//any data which is created using symbol called()
+//constructor comes under symbol datatype
+
+
+26/09/24
+JAVASCRIPT FUNCTIONS:
+JAVASCRIPT FUNCTIONS ARE BLOCK OF CODE WHICH ARE DESTINATED TO PERFORM SPECIFIC TASK
+ADVANTAGES:
+CODE REUSABLITY
+
+HOW TO CREATE A FUNCTION IN JS?
+USING FUNCTION KEY VALUE CAN CREATE A FUNCTION.
+FUNCTION NAME ALWAYS REPRESENT A BEHAVIOUR.
+UNTIL AND UNLESS WITHOUT INVOKING THE FUNCTION THE FUNCTION WOULDN'T INVOKED.
+
+SYNTAX:
+FUNCTION FUNCTION_NAME(){
+//SET OF CODE
+}
+FUNCTION_NAME()//CALLING FUNCTION
+
+EX:
+FUNCTION GREAT(){
+CONSOLE.LOG("HELLO GOODMRNG")
+}
+GREAT();
+FUNCTION ADD(){
+LET A=10;
+LET B=20;
+CONSOLE.LOG(A+B)
+}
+ADD();---->30
+
+DIFFERENT TYPES OF FUNCTIONS IN JAVASCRIPT:
+1. NAMED FUNCTION.
+2. PARAMETERIZED FUNCTION.
+3. RETURN FUNCTION.
+4. ANONYMOUS FUNCTION.
+5. CALLBACK FUNCTION.
+6. HIGHER ORDER FUNCTION.
+7. ARROW FUNCTION.
+8. IIFES.
+9. ASYNCHRONOUS FUNCTION.
+
+//1.named function
+//syntax: function function_name(){
+//code
+//}
+function fun1(){
+     console.log("hello")
+}
+fun1()
+//
+function add(){
+    let a=10;
+    let b=20;
+    console.log(a+b)
+}
+add()
+
+//2.parameterized function
+//we can send any function to the function by passing parameter
+//the input as a parameter.
+//syntax:
+//function function_name(parameter){
+//code
+//}
+//function_name(arguments)
+
+//parameters:these are the variables without scope statements.
+//which is used to store the data and we utilized inside the function.
+//arguments:where it will accepts the always the data to store for the parameter
+
+function add(x,y){
+     console.log(x+y)
+}
+add(20,30)
+
+function details(name,age,city){
+    console.log(name);
+    console.log(age);
+    console.log(city);
+}
+details("virat",38,"mumbai");
+details();
+
+//3.return function:
+//function which can return thr results and it should catch by separate variable and we see output
+//parameterarguments------>input----->function---->output---->return
+//syntax:
+//function function_name(){
+//set of code
+//return
+//}
+//ex:return normal func
+function fun(){
+        return "i am return function"
+}
+var res=fun()
+console.log(res)
+
+//ex:return func as parameter
+function add(x,y){
+     var results=x+y
+     return results
+}
+var res=add(90,40)
+console.log(res)
+
+//ex3:the statements after return stmt not execute.return should be last stmt inside the function.
+function func2(){
+    return "im return func"
+    console.log("hello world")
+    var a=15
+}
+console.log(func2())
+
+//4.anonymous fuction
+//the function without name is called anonymous function
+//this function is using as a call back function.
+//syntax:
+//function keyword
+//function(){
+//set of code
+//}
+//function expression:is a process of assigning a anonymous function to a variable and making a call
+
+//ex:anonymous function as named function
+var fun=function(){
+    console.log("i m anonymous")
+}
+fun()
+//ex:anonymous function as parameterized function
+let add1=function(x,y){
+     console.log(x+y)   
+}
+add1(55,34)
+
+//ex:anonymous function with return type
+let func3=function(){
+        return "i am returned anonymous function"
+}
+var res=func3()
+console.log(res)
+
+//***5.arrow function
+//arrow function introduced in es6 feature function keyword is not used to 
+//create arrow function arrow function are used mainly as call back function.
+//syntax:
+//()=>{
+//set of code
+//}
+
+//ex:with named
+var fun4=()=>{
+    console.log('i am ')
+}
+fun4()
+
+//ex:arrow function with parameterized function
+let details1=(name,age,city)=>{
+     console.log(name);
+     console.log(age);
+     console.log(city);
+}
+details1('virat',35,'mumbai')
+
+//ex:arrow function with anonymous function
+var res=()=>{
+     return("i am return arrow function")
+}
+console.log(res())
+
+30/09/24
+//call back function:Any function which are u passing as argument those 
+//functions are called call back function.
+//The suitable call back functions are:arrow function and anonymous function
+//higher order function:any function which is taking another function as argument 
+//that function is called as higher order function
+//or functions are called higher order function only if it takes minimum one
+// function as argument.
+function print(){
+    console.log("welcome to js class")
+
+}
+
+function add(x,y){
+    console.log(x+y)
+}
+
+function fn(f){
+   //console.log(f)
+   f()
+}
+
+//fn(print())
+//fn(add(10,80))
+fn(function(){
+console.log("i am anonymous function")
+})
+fn(()=>{
+    console.log("arrow function")
+})
+
+//8.immediately invoked function expression(iife's):
+//iife's are functions that are defined and executed immediately.
+//in one js file we should have only one immediate function.
+//ex:
+//(function(){
+    //console.log("hello word")
+//})()
+
+// (function(name,city){
+//     console.log(name)
+//     console.log(city)
+// })("virat","mumbai")
+
+//9.async function():introduced in es8 version of js
+//it reasier to work with promises. they are declared with async keyword
+//and use the 'await' keyword to pause execution until the promise is resolved.
+//ex:
+//await:to pause the function or promises.
+//fecth:to fetch the data from back end
+async function fetchData(){
+    let response=await fetch('https://fakestoreapi.com/products')
+    //console.log(response)
+    //how to convert it into a json format:user understand format, until the conversion 
+    //the data must be pause so using await keyword
+    //in js every thing in object format.[key value format]
+    let data=await response.json()
+    console.log(data)
+}
+fetchData()
+
+//objects in javascript:
+//we can create object without class in javascript.
+//object is combination of properties and behaviour.
+//object is a real word physical entity.
+//javascript object is collection of key-value pairs.
+//in javascipt object all the keys must be unique. 
+//if we use repeated once it deletes previous data and stores new data. 
+//in javascript object in a single variable we can store multiple values.
+//javascript object can be created without a class
+//how to create a object in javascript:
+//object can be created in two diff ways in javascript.
+//1.object literals
+//2.object constructor.
+//how to print json format data in forntend.
+
+//1.object literals.
+//syntax:
+//var,let,const object name={
+//key1 : value,
+//key2 : value,
+//key3 : value,
+//}
+
+//ex:
+let person={
+    name:"virat",
+    age:24,
+    city:"bangalore",
+    gender:"male"
+}
+console.log(person)
+
+//2.object constructor and new operator:
+//syntax:
+//let object_name=new object()
+let car=new Object()
+car.name="BMW"
+car.model=2024
+car.color="red"
+console.log(car)

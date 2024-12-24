@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book My Show</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E6E6FA; /* Light purple background */
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #6A5ACD; /* Slate Blue */
+            color: white;
+        }
+        .movie-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .movie {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            width: 150px;
+            background-color: white;
+        }
+        .book-button {
+            background-color: #FF4500; /* Orange Red */
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .book-button:hover {
+            background-color: #FF6347; /* Tomato */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Book My Show</h1>
+</header>
+
+<div class="movie-list">
+    <div class="movie">
+        <h2>Movie Title 1</h2>
+        <p>Genre: Action</p>
+        <p>Rating: 8.0</p>
+        <button class="book-button">Book Now</button>
+    </div>
+    <div class="movie">
+        <h2>Movie Title 2</h2>
+        <p>Genre: Comedy</p>
+        <p>Rating: 7.5</p>
+        <button class="book-button">Book Now</button>
+    </div>
+    <div class="movie">
+        <h2>Movie Title 3</h2>
+        <p>Genre: Drama</p>
+        <p>Rating: 9.0</p>
+        <button class="book-button">Book Now</button>
+    </div>
+    <!-- Add more movies as needed -->
+</div>
+
+</body>
+</html>
